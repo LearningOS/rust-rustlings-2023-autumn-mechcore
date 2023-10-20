@@ -24,6 +24,7 @@ pub struct ReportCard<T> {
     pub student_age: u8,
 }
 
+
 impl<T: std::fmt::Display> ReportCard<T> {
     pub fn print(&self) -> String {
         format!("{} ({}) - achieved a grade of {}",
@@ -33,6 +34,7 @@ impl<T: std::fmt::Display> ReportCard<T> {
 
 #[cfg(test)]
 mod tests {
+    
     use super::*;
 
     #[test]
